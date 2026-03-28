@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electrician Agent — RingCatch AI Phone Receptionist</title>
+  <meta name="description" content="RingCatch's AI phone receptionist for electricians. Answers every missed call, captures fault details, consumer unit info, and urgency — then sends you a clean lead summary by SMS.">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<!-- ==================== NAV ==================== -->
+<nav class="site-nav">
+  <a href="/" class="logo">
+    <img src="../images/logo.svg" alt="RingCatch" class="logo-icon">
+    <div class="logo-text">
+    <span class="logo-name">RingCatch</span>
+    <span class="logo-sub">by Coastline Automation</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="/#how-it-works">How It Works</a></li>
+    <li><a href="/#agents">Our Agents</a></li>
+    <li><a href="/about.html">About</a></li>
+    <li><a href="/#faq">FAQ</a></li>
+    <li><a href="#" class="nav-cta">Schedule a Call</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
+
+<div class="drawer-backdrop" id="drawer-backdrop"></div>
+<div class="mobile-drawer" id="mobile-drawer">
+  <a href="/#how-it-works">How It Works</a>
+  <a href="/#agents">Our Agents</a>
+  <a href="/about.html">About</a>
+  <a href="/#faq">FAQ</a>
+  <a href="#" class="drawer-cta">Schedule a Call</a>
+</div>
+
+
+<!-- ==================== 1. AGENT HERO ==================== -->
+<section class="agent-hero">
+  <div class="agent-hero-bg"></div>
+  <div class="agent-hero-overlay"></div>
+  <div class="hero-grain"></div>
+
+  <div class="agent-hero-content">
+    <p class="eyebrow hero-fade">Electrician Agent</p>
+    <h1 class="hero-headline hero-fade">
+      Your electrical calls,<br>
+      <em>answered 24/7.</em>
+    </h1>
+    <p class="hero-tagline hero-fade">
+      While you're up a ladder or rewiring a kitchen, your AI receptionist answers every call, captures the fault details and urgency — then sends you a <strong>clean lead summary</strong> by SMS.
+    </p>
+    <div class="hero-actions hero-fade">
+      <a href="#" class="btn-primary">Schedule a Call</a>
+      <a href="#demo" class="btn-ghost">See It in Action</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ==================== 2. TRADE-SPECIFIC PAIN ==================== -->
+<section class="pain-section" id="pain">
+  <div class="pain-stage">
+    <p class="section-label accent-ember pain-label">Sound Familiar?</p>
+    <div class="pain-slideshow">
+      <p class="pain-slide" data-slide="0">You're mid-way through a second fix.</p>
+      <p class="pain-slide" data-slide="1">Your phone buzzes in your pocket.</p>
+      <p class="pain-slide" data-slide="2">Both hands full of cable.</p>
+      <p class="pain-slide dim" data-slide="3">You'll call them back later.</p>
+      <p class="pain-slide dim" data-slide="4">They've already rung someone else.</p>
+      <p class="pain-slide ember" data-slide="5">Another job lost.</p>
+    </div>
+    <div class="pain-progress-bar"><div class="pain-progress-fill"></div></div>
+    <div class="pain-footer">
+      <p class="pain-resolve">Your RingCatch electrician agent makes sure this never happens.</p>
+      <div class="pain-bridge">
+        <span class="pain-bridge-num">80%</span>
+        <span class="pain-bridge-label">of callers won't leave a voicemail — they'll just ring the next sparky</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ==================== 3. HOW IT WORKS ==================== -->
+<section class="section section-dark" id="how-it-works">
+  <div class="max-w-site">
+    <p class="section-label reveal">How It Works</p>
+    <h2 class="section-heading reveal">Three steps. Zero missed calls.</h2>
+    <p class="section-sub reveal">No apps to learn. No tech to manage. Just more electrical leads landing in your pocket.</p>
+
+    <div class="steps-grid stagger-group">
+
+      <div class="step-card stagger-item">
+        <div class="step-icon">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        </div>
+        <div class="step-num">01</div>
+        <h3 class="step-title">Your phone forwards after 3–4 rings</h3>
+        <p class="step-desc">If you're on a job and can't pick up, the call diverts to your RingCatch number. No hardware, no apps — just a simple call forward.</p>
+      </div>
+
+      <div class="step-card stagger-item">
+        <div class="step-icon">
+          <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+        </div>
+        <div class="step-num">02</div>
+        <h3 class="step-title">Your electrician agent has a real conversation</h3>
+        <p class="step-desc">It answers like a receptionist who knows electrics — asks about the fault, whether it's a consumer unit issue or socket problem, the property type, and how urgent it is.</p>
+      </div>
+
+      <div class="step-card stagger-item">
+        <div class="step-icon">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <div class="step-num">03</div>
+        <h3 class="step-title">You get an SMS with everything you need</h3>
+        <p class="step-desc">Within seconds: caller name, number, what's gone wrong, property type, and when they want it sorted. You call back informed, on your terms.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ==================== 4. DEMO SECTION ==================== -->
+<section class="section section-darker" id="demo">
+  <div class="max-w-site">
+    <p class="section-label reveal" style="text-align:center">See It in Action</p>
+    <h2 class="section-heading reveal" style="text-align:center; margin: 0 auto;">A missed call turned into a solid lead.</h2>
+    <p class="section-sub reveal" style="text-align:center; margin: 20px auto 0;">Here's what happens when a homeowner calls your number and you can't pick up.</p>
+
+    <div class="demo-timeline reveal">
+
+      <div class="demo-step">
+        <div class="demo-step-marker">
+          <div class="demo-step-dot"></div>
+          <div class="demo-step-line"></div>
+        </div>
+        <div class="demo-step-content">
+          <div class="demo-step-label">Incoming call</div>
+          <div class="demo-step-card">
+            <p class="demo-caller">"Hi, our power keeps tripping. The whole house goes off whenever we use the oven. It's been happening for a couple of days."</p>
+            <span class="demo-tag">Homeowner</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="demo-step">
+        <div class="demo-step-marker">
+          <div class="demo-step-dot dot-teal"></div>
+          <div class="demo-step-line"></div>
+        </div>
+        <div class="demo-step-content">
+          <div class="demo-step-label">Your agent responds</div>
+          <div class="demo-step-card card-teal">
+            <p class="demo-agent">"That doesn't sound right — let me take some details. Is it the main trip switch going, or an individual circuit breaker? And do you know how old your consumer unit is?"</p>
+            <span class="demo-tag tag-teal">RingCatch Agent</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="demo-step">
+        <div class="demo-step-marker">
+          <div class="demo-step-dot"></div>
+          <div class="demo-step-line"></div>
+        </div>
+        <div class="demo-step-content">
+          <div class="demo-step-label">Details captured</div>
+          <div class="demo-step-card">
+            <p class="demo-caller">"I think it's the main switch — everything goes off. The fuse box looks quite old, it's got those wire fuses in it. We're in most evenings if someone can come round."</p>
+            <span class="demo-tag">Homeowner</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="demo-step">
+        <div class="demo-step-marker">
+          <div class="demo-step-dot dot-ember"></div>
+        </div>
+        <div class="demo-step-content">
+          <div class="demo-step-label">You receive this SMS</div>
+          <div class="demo-step-card card-sms">
+            <div class="sms-header">
+              <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" fill="none" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+              <span>New lead from RingCatch</span>
+            </div>
+            <div class="sms-body">
+              <div class="sms-row"><strong>Name:</strong> James & Helen Parker</div>
+              <div class="sms-row"><strong>Phone:</strong> 07700 900456</div>
+              <div class="sms-row"><strong>Issue:</strong> Whole house tripping when oven is used</div>
+              <div class="sms-row"><strong>Details:</strong> Main switch tripping, old rewirable fuse box</div>
+              <div class="sms-row"><strong>Urgency:</strong> Ongoing for a few days, wants it sorted</div>
+              <div class="sms-row"><strong>Availability:</strong> Most evenings</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ==================== 5. WHAT YOU GET ==================== -->
+<section class="section section-dark" id="features">
+  <div class="max-w-site">
+    <p class="section-label reveal">What You Get</p>
+    <h2 class="section-heading reveal">Built for electricians. Managed for you.</h2>
+
+    <div class="features-grid stagger-group">
+
+      <div class="feature-item stagger-item">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <div>
+          <h3 class="feature-title">24/7 call answering</h3>
+          <p class="feature-desc">Power cuts and tripping circuits don't wait for office hours. Your agent answers evenings, weekends, and bank holidays.</p>
+        </div>
+      </div>
+
+      <div class="feature-item stagger-item">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        </div>
+        <div>
+          <h3 class="feature-title">Trained for electrics</h3>
+          <p class="feature-desc">Your agent knows consumer units from fuse boxes, understands RCD tripping, and asks about certification needs. It speaks your trade.</p>
+        </div>
+      </div>
+
+      <div class="feature-item stagger-item">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <div>
+          <h3 class="feature-title">Structured lead summaries</h3>
+          <p class="feature-desc">Every lead arrives as a clean SMS and email — name, number, fault description, property type, urgency, and availability.</p>
+        </div>
+      </div>
+
+      <div class="feature-item stagger-item">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div>
+          <h3 class="feature-title">Fully managed</h3>
+          <p class="feature-desc">We handle setup, agent training, updates, and support. You just set up a call forward on your phone — takes about two minutes.</p>
+        </div>
+      </div>
+
+      <div class="feature-item stagger-item">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        </div>
+        <div>
+          <h3 class="feature-title">Live in about 7 days</h3>
+          <p class="feature-desc">We spend a week training your agent on your services, your patch, and how you like things handled. Then you're good to go.</p>
+        </div>
+      </div>
+
+      <div class="feature-item stagger-item">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <div>
+          <h3 class="feature-title">Natural conversations</h3>
+          <p class="feature-desc">Callers won't know it's AI. Your agent handles curveballs, asks follow-up questions, and sounds like someone who actually knows about electrics.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ==================== 6. PRICING TEASER ==================== -->
+<section class="section section-darker" id="pricing">
+  <div class="max-w-site" style="text-align: center;">
+    <p class="section-label reveal">Pricing</p>
+    <h2 class="section-heading reveal" style="margin: 0 auto;">One missed job pays for months of RingCatch.</h2>
+    <p class="section-sub reveal" style="margin: 20px auto 0;">Think about what a single lost lead costs you — a consumer unit upgrade, a full rewire, an emergency call-out. RingCatch makes sure those calls never go unanswered.</p>
+    <div class="reveal" style="margin-top: 48px;">
+      <a href="#" class="btn-gold">Get a Quote</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ==================== 7. CTA ==================== -->
+<section class="cta-section">
+  <div class="max-w-site">
+    <h2 class="cta-heading reveal">Ready to stop missing calls?</h2>
+    <p class="cta-sub reveal">Book a free 20-minute consultation. We'll walk through how RingCatch works for electricians, answer your questions, and get you set up if it's a good fit.</p>
+    <div class="reveal" style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+      <a href="#" class="btn-gold">Schedule a Call</a>
+      <a href="#demo" class="btn-ghost" style="color: rgba(245,240,232,0.6);">See the Demo</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ==================== 8. FOOTER ==================== -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="logo">
+        <img src="../images/logo.svg" alt="RingCatch" class="logo-icon">
+        <div class="logo-text">
+        <span class="logo-name">RingCatch</span>
+        <span class="logo-sub">by Coastline Automation</span>
+        </div>
+      </div>
+      <p style="margin-top: 16px;">Managed AI phone receptionists for trade businesses on the South Coast and beyond.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Agents</h4>
+      <a href="/agents/plumber.html">Plumber</a>
+      <a href="/agents/electrician.html">Electrician</a>
+      <a href="/agents/roofer.html">Roofer</a>
+      <a href="/agents/builder.html">Builder</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="/#how-it-works">How It Works</a>
+      <a href="/about.html">About</a>
+      <a href="/#faq">FAQ</a>
+      <a href="#">Privacy Policy</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Get Started</h4>
+      <a href="#">Schedule a Call</a>
+      <a href="mailto:hello@ringcatch.ai">hello@ringcatch.ai</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span>&copy; 2026 Coastline Automation Ltd. All rights reserved.</span>
+    <span>RingCatch is a product of Coastline Automation.</span>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="../js/main.js"></script>
+
+</body>
+</html>

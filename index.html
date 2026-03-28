@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RingCatch — AI Phone Receptionist for Trade Businesses</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ==================== NAV ==================== -->
+<nav class="site-nav">
+  <a href="/" class="logo">
+    <img src="images/logo.svg" alt="RingCatch" class="logo-icon">
+    <div class="logo-text">
+      <span class="logo-name">RingCatch</span>
+      <span class="logo-sub">by Coastline Automation</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#how-it-works">How It Works</a></li>
+    <li><a href="#agents">Our Agents</a></li>
+    <li><a href="/about.html">About</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#" class="nav-cta">Schedule a Call</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
+
+<!-- Mobile drawer -->
+<div class="drawer-backdrop" id="drawer-backdrop"></div>
+<div class="mobile-drawer" id="mobile-drawer">
+  <a href="#how-it-works">How It Works</a>
+  <a href="#agents">Our Agents</a>
+  <a href="/about.html">About</a>
+  <a href="#faq">FAQ</a>
+  <a href="#" class="drawer-cta">Schedule a Call</a>
+</div>
+
+
+<!-- ==================== 1. HERO ==================== -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay-left"></div>
+  <div class="hero-overlay-bottom"></div>
+  <div class="hero-grain"></div>
+
+  <div class="hero-content">
+    <p class="eyebrow hero-fade">An AI Receptionist Built Around Your Business</p>
+    <p class="eyebrow hero-fade">Custom-trained for your trade, your services, and your patch.</p>
+    <h1 class="hero-headline hero-fade">
+      Never miss a lead.<br>
+      <em>Never miss a wave.</em>
+    </h1>
+    <p class="hero-tagline hero-fade">
+      Your AI phone receptionist answers every call, captures the details, and sends you a summary — so you can <strong>stay on the tools</strong> and <strong>live your life</strong>.
+    </p>
+    <div class="hero-actions hero-fade">
+      <a href="#" class="btn-primary">Schedule a Call</a>
+      <a href="#agents" class="btn-ghost">Explore Our Agents</a>
+    </div>
+  </div>
+
+  <div class="hero-bottom hero-fade" style="opacity:0">
+    <div class="hero-stat-group">
+      <div class="stat">
+        <div class="stat-num">24/7</div>
+        <div class="stat-label">Agents Running</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <div class="stat-num">0</div>
+        <div class="stat-label">Missed Calls</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <div class="stat-num">0</div>
+        <div class="stat-label">Missed Waves</div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <div class="scroll-line"></div>
+      <span class="scroll-label">Scroll</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- ==================== 2. PAIN / PROBLEM ==================== -->
+<section class="pain-section" id="pain">
+  <div class="pain-stage">
+    <p class="section-label accent-ember pain-label">The Problem</p>
+    <div class="pain-slideshow">
+      <p class="pain-slide" data-slide="0">You're on the tools.</p>
+      <p class="pain-slide" data-slide="1">Your phone rings.</p>
+      <p class="pain-slide" data-slide="2">You can't pick up.</p>
+      <p class="pain-slide dim" data-slide="3">They don't leave a message.</p>
+      <p class="pain-slide dim" data-slide="4">They call someone else.</p>
+      <p class="pain-slide ember" data-slide="5">That job's gone.</p>
+    </div>
+    <div class="pain-progress-bar"><div class="pain-progress-fill"></div></div>
+    <div class="pain-footer">
+      <p class="pain-resolve">RingCatch makes sure this never happens.</p>
+      <div class="pain-bridge">
+        <span class="pain-bridge-num">80%</span>
+        <span class="pain-bridge-label">of callers won't leave a voicemail — they'll just ring the next person</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ==================== 3. HOW IT WORKS ==================== -->
+<section class="section section-dark" id="how-it-works">
+  <div class="max-w-site">
+    <p class="section-label reveal">How It Works</p>
+    <h2 class="section-heading reveal">Three steps. Zero missed calls.</h2>
+    <p class="section-sub reveal">No apps to learn. No tech to manage. Just more leads landing in your pocket.</p>
+
+    <div class="steps-grid stagger-group">
+
+      <div class="step-card stagger-item">
+        <div class="step-icon">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        </div>
+        <div class="step-num">01</div>
+        <h3 class="step-title">Your phone forwards after 3–4 rings</h3>
+        <p class="step-desc">If you can't pick up, the call diverts to your RingCatch number automatically. No hardware, no apps — just a simple call forward from your existing phone.</p>
+      </div>
+
+      <div class="step-card stagger-item">
+        <div class="step-icon">
+          <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+        </div>
+        <div class="step-num">02</div>
+        <h3 class="step-title">Your AI agent has a natural conversation</h3>
+        <p class="step-desc">Your RingCatch agent answers like a real receptionist — friendly, professional, trained for your trade. It asks the right questions and captures every detail.</p>
+      </div>
+
+      <div class="step-card stagger-item">
+        <div class="step-icon">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <div class="step-num">03</div>
+        <h3 class="step-title">You get an SMS and email with everything</h3>
+        <p class="step-desc">Within seconds, you receive a clean summary: caller name, number, what they need, and when they want it done. Call them back informed, on your terms.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ==================== 4. MEET THE AGENTS ==================== -->
+<section class="section section-darker" id="agents">
+  <div class="max-w-site">
+    <p class="section-label reveal">Meet the Agents</p>
+    <h2 class="section-heading reveal">AI receptionists trained for your trade.</h2>
+    <p class="section-sub reveal">Each RingCatch agent is purpose-built for a specific trade. It knows the terminology, asks the right questions, and captures exactly what you need to quote the job.</p>
+
+    <div class="agents-grid stagger-group">
+
+      <div class="agent-card stagger-item">
+        <div class="agent-icon">
+          <svg viewBox="0 0 24 24"><path d="M3 17h2v5H3zM19 17h2v5h-2z"/><path d="M6 7V4a1 1 0 011-1h10a1 1 0 011 1v3"/><path d="M4 7h16a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V9a2 2 0 012-2z"/><circle cx="8" cy="12" r="1"/><circle cx="16" cy="12" r="1"/></svg>
+        </div>
+        <h3 class="agent-name">Plumber Agent</h3>
+        <p class="agent-tagline">Captures leak details, boiler types, and urgency — so you can quote before the other plumber even calls back.</p>
+        <a href="agents/plumber.html" class="agent-link">Learn more &rarr;</a>
+      </div>
+
+      <div class="agent-card stagger-item">
+        <div class="agent-icon">
+          <svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        </div>
+        <h3 class="agent-name">Electrician Agent</h3>
+        <p class="agent-tagline">Knows consumer units from sockets. Gets the job details right first time, every time.</p>
+        <a href="agents/electrician.html" class="agent-link">Learn more &rarr;</a>
+      </div>
+
+      <div class="agent-card stagger-item">
+        <div class="agent-icon">
+          <svg viewBox="0 0 24 24"><path d="M3 21h18l-9-18z"/><line x1="12" y1="9" x2="12" y2="15"/></svg>
+        </div>
+        <h3 class="agent-name">Roofer Agent</h3>
+        <p class="agent-tagline">Flat roof, pitched roof, emergency leak — your agent knows the questions to ask before you climb the ladder.</p>
+        <a href="agents/roofer.html" class="agent-link">Learn more &rarr;</a>
+      </div>
+
+      <div class="agent-card stagger-item">
+        <div class="agent-icon">
+          <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M12 7V3"/><path d="M2 7l10-4 10 4"/></svg>
+        </div>
+        <h3 class="agent-name">Builder Agent</h3>
+        <p class="agent-tagline">Extensions, renovations, new builds — your agent captures scope and timelines so you can plan ahead.</p>
+        <a href="agents/builder.html" class="agent-link">Learn more &rarr;</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ==================== 5. WHAT YOU GET ==================== -->
+<section class="section section-dark" id="features">
+  <div class="max-w-site">
+    <p class="section-label reveal">What You Get</p>
+    <h2 class="section-heading reveal">Everything you need. Nothing you don't.</h2>
+
+    <div class="features-grid stagger-group">
+
+      <div class="feature-item stagger-item">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <div>
+          <h3 class="feature-title">24/7 call answering</h3>
+          <p class="feature-desc">Evenings, weekends, bank holidays — your agent never clocks off. Every call gets answered, every lead gets captured.</p>
+        </div>
+      </div>
+
+      <div class="feature-item stagger-item">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <div>
+          <h3 class="feature-title">Structured lead data</h3>
+          <p class="feature-desc">Every lead arrives as a clean SMS and email summary — name, number, what they need, and when. No garbled voicemails.</p>
+        </div>
+      </div>
+
+      <div class="feature-item stagger-item">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div>
+          <h3 class="feature-title">Fully managed service</h3>
+          <p class="feature-desc">We handle everything — setup, training your agent, updates, and support. You don't lift a finger.</p>
+        </div>
+      </div>
+
+      <div class="feature-item stagger-item">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        </div>
+        <div>
+          <h3 class="feature-title">Set up in around 7 days</h3>
+          <p class="feature-desc">From sign-up to live calls in about a week. We train your agent on your trade and your business — then you're good to go.</p>
+        </div>
+      </div>
+
+      <div class="feature-item stagger-item">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+        </div>
+        <div>
+          <h3 class="feature-title">No tech skills needed</h3>
+          <p class="feature-desc">If you can forward a phone call, you can use RingCatch. That's genuinely all the "tech" involved on your end.</p>
+        </div>
+      </div>
+
+      <div class="feature-item stagger-item">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <div>
+          <h3 class="feature-title">Calls that sound natural</h3>
+          <p class="feature-desc">Your agent doesn't sound like a robot reading a script. It has a genuine conversation, handles curveballs, and sounds like someone on your team.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ==================== 6. FAQ ==================== -->
+<section class="section section-darker" id="faq">
+  <div class="max-w-site">
+    <p class="section-label reveal" style="text-align:center">FAQ</p>
+    <h2 class="section-heading reveal" style="text-align:center; margin: 0 auto;">Got questions? Fair enough.</h2>
+
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Will callers know they're talking to AI?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Most won't notice a thing. Your RingCatch agent uses natural-sounding speech, understands context, and handles real conversations — not robotic menus. It's trained specifically for your trade, so it asks the right questions and sounds like someone who knows what they're talking about.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          What happens if the system goes down?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">We've built RingCatch on infrastructure that runs 24/7 with redundancy baked in. In the very unlikely event of downtime, calls fall back to your phone as normal — you'd just answer them yourself. But honestly, this almost never happens.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Can't I just use voicemail?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">You can — but most people don't leave voicemails anymore. They hang up and call the next person on the list. RingCatch actually answers the call, has a conversation, and captures everything. It's the difference between a missed opportunity and a solid lead waiting in your inbox.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          How long does setup take?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">About a week from start to finish. We spend that time training your agent on your specific trade, your services, and how you like things handled. Once it's live, you just set up a call forward on your phone — that takes about two minutes.</div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Is my data safe?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Absolutely. All call data is encrypted and stored securely. We don't sell your data or your customers' data to anyone. RingCatch is a UK-based service and we take data protection seriously — your information stays between you and us.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ==================== 7. CTA ==================== -->
+<section class="cta-section">
+  <div class="max-w-site">
+    <h2 class="cta-heading reveal">Book your free 20-minute consultation</h2>
+    <p class="cta-sub reveal">We'll walk through how RingCatch works for your trade, answer your questions, and get you set up if it's a good fit. No pressure, no hard sell.</p>
+    <a href="#" class="btn-gold reveal">Schedule a Call</a>
+  </div>
+</section>
+
+
+<!-- ==================== 8. FOOTER ==================== -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="logo">
+        <img src="images/logo.svg" alt="RingCatch" class="logo-icon">
+        <div class="logo-text">
+          <span class="logo-name">RingCatch</span>
+          <span class="logo-sub">by Coastline Automation</span>
+        </div>
+      </div>
+      <p style="margin-top: 16px;">Managed AI phone receptionists for trade businesses on the South Coast and beyond.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Agents</h4>
+      <a href="agents/plumber.html">Plumber</a>
+      <a href="agents/electrician.html">Electrician</a>
+      <a href="agents/roofer.html">Roofer</a>
+      <a href="agents/builder.html">Builder</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="#how-it-works">How It Works</a>
+      <a href="/about.html">About</a>
+      <a href="#faq">FAQ</a>
+      <a href="#">Privacy Policy</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Get Started</h4>
+      <a href="#">Schedule a Call</a>
+      <a href="mailto:hello@ringcatch.ai">hello@ringcatch.ai</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span>&copy; 2026 Coastline Automation Ltd. All rights reserved.</span>
+    <span>RingCatch is a product of Coastline Automation.</span>
+  </div>
+</footer>
+
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
