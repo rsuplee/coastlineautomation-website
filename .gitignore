@@ -6,3 +6,4 @@ skills-lock.json
 .next/
 out/
 next-env.d.ts
+.vercel
