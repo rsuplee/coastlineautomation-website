@@ -25,7 +25,7 @@ export async function POST() {
       const errorText = await res.text()
       console.error('Retell API error:', res.status, errorText)
       return NextResponse.json(
-        { error: 'Failed to create call' },
+        { error: 'Failed to create call', retell_status: res.status, retell_error: errorText },
         { status: 503 }
       )
     }
