@@ -6,9 +6,8 @@ export default function Footer() {
       <div className="footer-inner">
         <div className="footer-brand">
           <div className="logo">
-            <div className="logo-text">
-              <span className="logo-name">Coastline Automation</span>
-            </div>
+            <img src="/images/coastlineautomation-icon.svg" alt="" className="logo-icon" />
+            <span className="logo-name">Coastline Automation</span>
           </div>
           <p className="footer-brand-desc">Bespoke AI-powered tools built for UK trade businesses.</p>
         </div>

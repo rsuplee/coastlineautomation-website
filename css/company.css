@@ -355,6 +355,13 @@
   margin-bottom: 24px;
 }
 
+/* ===================== LOGO ===================== */
+.logo-icon {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+}
+
 /* ===================== LIGHT NAV OVERRIDES ===================== */
 body:has(.ca-page) .site-nav {
   background: rgba(248, 248, 248, 0.85);

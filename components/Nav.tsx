@@ -57,9 +57,8 @@ export default function Nav() {
     <>
       <nav className="site-nav">
         <Link href="/" className="logo">
-          <div className="logo-text">
-            <span className="logo-name">Coastline Automation</span>
-          </div>
+          <img src="/images/coastlineautomation-icon.svg" alt="" className="logo-icon" />
+          <span className="logo-name">Coastline Automation</span>
         </Link>
         <ul className="nav-links">
           <li><Link href="/#about">About</Link></li>
