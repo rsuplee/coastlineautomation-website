@@ -1,3 +1,7 @@
+'use client'
+
+import { openCalendlyCA } from '@/lib/calendly-ca'
+
 export default function HomePage() {
   return (
     <div className="ca-page">
@@ -10,7 +14,7 @@ export default function HomePage() {
           </p>
           <div className="ca-hero-actions">
             <a href="https://tradecatch.ai" className="ca-btn ca-btn-primary" target="_blank" rel="noopener noreferrer">Explore TradeCatch</a>
-            <a href="#contact" className="ca-btn ca-btn-outline">Talk to us</a>
+            <a href="#contact" className="ca-btn ca-btn-outline" onClick={openCalendlyCA}>Talk to us</a>
           </div>
         </div>
       </section>
@@ -136,7 +140,7 @@ export default function HomePage() {
 
           <p className="ca-pricing-note">&pound;499 customisation fee — currently waived for all new customers.</p>
           <div className="ca-pricing-cta">
-            <a href="mailto:hello@coastlineautomation.co.uk" className="ca-btn ca-btn-primary">Book a free consultation</a>
+            <a href="#" className="ca-btn ca-btn-primary" onClick={openCalendlyCA}>Book a free consultation</a>
           </div>
         </div>
       </section>
@@ -158,7 +162,7 @@ export default function HomePage() {
               </div>
             </div>
             <p className="ca-contact-text">Book a free 20-minute call to discuss your needs. No pressure, no hard sell.</p>
-            <a href="mailto:hello@coastlineautomation.co.uk" className="ca-btn ca-btn-primary">Get in touch</a>
+            <a href="#" className="ca-btn ca-btn-primary" onClick={openCalendlyCA}>Get in touch</a>
           </div>
         </div>
       </section>

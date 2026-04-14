@@ -1,3 +1,7 @@
+'use client'
+
+import { openCalendlyCA } from '@/lib/calendly-ca'
+
 export default function AboutPage() {
   return (
     <div className="ca-page">
@@ -35,7 +39,7 @@ export default function AboutPage() {
           <p className="ca-label">Contact</p>
           <h2 className="ca-heading">Want to talk?</h2>
           <p className="ca-contact-text">Whether you need a bespoke AI build or just want to learn more about what we do, drop us a line.</p>
-          <a href="mailto:hello@coastlineautomation.co.uk" className="ca-btn ca-btn-primary">Get in touch</a>
+          <a href="#" className="ca-btn ca-btn-primary" onClick={openCalendlyCA}>Get in touch</a>
         </div>
       </section>
     </div>
