@@ -34,7 +34,6 @@ export default function Nav() {
     const drawerLinks = drawer.querySelectorAll('a')
     drawerLinks.forEach((link) => link.addEventListener('click', closeMenu))
 
-    // Nav scroll effect
     const nav = document.querySelector('.site-nav')
     function handleScroll() {
       if (!nav) return
@@ -63,9 +62,10 @@ export default function Nav() {
           </div>
         </Link>
         <ul className="nav-links">
-          <li><Link href="/#how-it-works">How It Works</Link></li>
-          <li><Link href="/about">About</Link></li>
-          <li><a href="mailto:hello@coastlineautomation.co.uk">Contact</a></li>
+          <li><Link href="/#about">About</Link></li>
+          <li><Link href="/#products">Products</Link></li>
+          <li><Link href="/#consulting">Consulting</Link></li>
+          <li><Link href="/#contact">Contact</Link></li>
         </ul>
         <button className="hamburger" id="hamburger" aria-label="Menu">
           <span></span>
@@ -76,9 +76,10 @@ export default function Nav() {
 
       <div className="drawer-backdrop" id="drawer-backdrop"></div>
       <div className="mobile-drawer" id="mobile-drawer">
-        <Link href="/#how-it-works">How It Works</Link>
-        <Link href="/about">About</Link>
-        <a href="mailto:hello@coastlineautomation.co.uk">Contact</a>
+        <Link href="/#about">About</Link>
+        <Link href="/#products">Products</Link>
+        <Link href="/#consulting">Consulting</Link>
+        <Link href="/#contact">Contact</Link>
       </div>
     </>
   )

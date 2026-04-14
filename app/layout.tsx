@@ -3,7 +3,7 @@ import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import CookieBanner from '@/components/CookieBanner'
 import '../css/styles.css'
-import '../css/pricing.css'
+import '../css/company.css'
 
 export const metadata: Metadata = {
   title: 'Coastline Automation — Bespoke AI Tools for UK Trade Businesses',

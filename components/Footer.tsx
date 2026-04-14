@@ -1,5 +1,3 @@
-'use client'
-
 import Link from 'next/link'
 
 export default function Footer() {
@@ -12,16 +10,24 @@ export default function Footer() {
               <span className="logo-name">Coastline Automation</span>
             </div>
           </div>
-          <p style={{ marginTop: 16 }}>Bespoke AI-powered tools built for UK trade businesses.</p>
+          <p className="footer-brand-desc">Bespoke AI-powered tools built for UK trade businesses.</p>
         </div>
 
         <div className="footer-col">
           <h4>Company</h4>
-          <Link href="/#how-it-works">How It Works</Link>
-          <Link href="/about">About</Link>
+          <Link href="/#about">About</Link>
+          <Link href="/#consulting">Consulting</Link>
+          <Link href="/#contact">Contact</Link>
           <Link href="/privacy">Privacy Policy</Link>
           <Link href="/terms">Terms of Use</Link>
           <Link href="/cookies">Cookie Policy</Link>
+        </div>
+
+        <div className="footer-col">
+          <h4>Products</h4>
+          <a href="https://tradecatch.ai" target="_blank" rel="noopener noreferrer">TradeCatch</a>
+          <a href="https://ringcatch.ai" target="_blank" rel="noopener noreferrer">RingCatch</a>
+          <a href="https://reviewcatch.ai" target="_blank" rel="noopener noreferrer">ReviewCatch</a>
         </div>
 
         <div className="footer-col">

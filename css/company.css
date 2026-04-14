@@ -1,0 +1,444 @@
+/* === Coastline Automation — Company Page (Light Theme) === */
+
+/* ===================== PAGE WRAPPER ===================== */
+.ca-page {
+  background: var(--white);
+  color: #1a1a1a;
+}
+
+/* Override nav for light page */
+.ca-page ~ .site-footer,
+.ca-page ~ footer {
+  background: #0d1214;
+}
+
+/* ===================== SHARED ===================== */
+.ca-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 20px;
+}
+
+.ca-heading {
+  font-size: clamp(28px, 4vw, 48px);
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--teal);
+  max-width: 700px;
+  margin-bottom: 24px;
+}
+
+.ca-intro {
+  font-size: clamp(15px, 1.3vw, 17px);
+  color: #4a4a4a;
+  max-width: 640px;
+  line-height: 1.75;
+  margin-bottom: 48px;
+}
+
+.ca-section {
+  padding: 96px 56px;
+}
+
+.ca-section-alt {
+  background: #f0efeb;
+}
+
+/* ===================== BUTTONS ===================== */
+.ca-btn {
+  display: inline-block;
+  padding: 14px 32px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.ca-btn-primary {
+  background: var(--teal);
+  color: #fff;
+}
+
+.ca-btn-primary:hover {
+  background: #15494d;
+  transform: translateY(-1px);
+}
+
+.ca-btn-outline {
+  background: transparent;
+  color: var(--teal);
+  border: 2px solid var(--teal);
+}
+
+.ca-btn-outline:hover {
+  background: var(--teal);
+  color: #fff;
+}
+
+/* ===================== HERO ===================== */
+.ca-hero {
+  padding: 160px 56px 96px;
+  background: linear-gradient(170deg, var(--white) 0%, #e8f4f4 50%, #dff0f0 100%);
+}
+
+.ca-hero-headline {
+  font-size: clamp(32px, 5vw, 60px);
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--teal);
+  max-width: 720px;
+  margin-bottom: 24px;
+}
+
+.ca-hero-sub {
+  font-size: clamp(16px, 1.4vw, 19px);
+  color: #4a4a4a;
+  max-width: 580px;
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+
+.ca-hero-actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* ===================== FOUNDER / ABOUT ===================== */
+.ca-founder-content {
+  margin-top: 16px;
+}
+
+.ca-founder-bio {
+  max-width: 640px;
+}
+
+.ca-founder-bio p {
+  font-size: 16px;
+  line-height: 1.75;
+  color: #3a3a3a;
+  margin-bottom: 16px;
+}
+
+.ca-credentials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 48px;
+  max-width: 640px;
+}
+
+.ca-credential-card {
+  background: #fff;
+  border: 1px solid #e0ddd6;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.ca-credential-company {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--teal);
+}
+
+.ca-credential-role {
+  font-size: 13px;
+  color: #6a6a6a;
+  font-weight: 500;
+}
+
+/* ===================== PRODUCTS ===================== */
+.ca-product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.ca-product-card {
+  background: #fff;
+  border: 1px solid #e0ddd6;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ca-product-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.ca-product-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--teal);
+}
+
+.ca-badge {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 2px;
+}
+
+.ca-badge-live {
+  background: #e6f7f7;
+  color: var(--teal);
+}
+
+.ca-badge-soon {
+  background: #f5f0e4;
+  color: var(--gold);
+}
+
+.ca-product-desc {
+  font-size: 15px;
+  line-height: 1.65;
+  color: #4a4a4a;
+  flex: 1;
+}
+
+.ca-product-link {
+  display: inline-block;
+  margin-top: 16px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--teal);
+  letter-spacing: 0.05em;
+  transition: color 0.2s;
+}
+
+.ca-product-link:hover {
+  color: var(--mid-teal);
+}
+
+.ca-products-footer {
+  margin-top: 48px;
+  text-align: center;
+}
+
+.ca-products-footer p {
+  font-size: 16px;
+  color: #4a4a4a;
+  margin-bottom: 20px;
+}
+
+.ca-products-footer a:not(.ca-btn) {
+  color: var(--teal);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ===================== CONSULTING ===================== */
+.ca-consulting-text {
+  max-width: 640px;
+  margin-bottom: 48px;
+}
+
+.ca-consulting-text p {
+  font-size: 16px;
+  line-height: 1.75;
+  color: #3a3a3a;
+  margin-bottom: 16px;
+}
+
+.ca-pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: 720px;
+}
+
+.ca-pricing-card {
+  background: #fff;
+  border: 1px solid #e0ddd6;
+  padding: 36px;
+}
+
+.ca-pricing-card-featured {
+  border-color: var(--teal);
+  border-width: 2px;
+}
+
+.ca-pricing-tier {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--teal);
+  margin-bottom: 8px;
+}
+
+.ca-pricing-price {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 16px;
+}
+
+.ca-pricing-price span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #6a6a6a;
+}
+
+.ca-pricing-desc {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #4a4a4a;
+}
+
+.ca-pricing-note {
+  margin-top: 24px;
+  font-size: 15px;
+  color: var(--gold);
+  font-weight: 600;
+}
+
+.ca-pricing-cta {
+  margin-top: 32px;
+}
+
+/* ===================== CONTACT ===================== */
+.ca-contact-content {
+  max-width: 480px;
+}
+
+.ca-contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.ca-contact-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ca-contact-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #8a8a8a;
+}
+
+.ca-contact-item a {
+  font-size: 16px;
+  color: var(--teal);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.ca-contact-item a:hover {
+  color: var(--mid-teal);
+}
+
+.ca-contact-text {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #4a4a4a;
+  margin-bottom: 24px;
+}
+
+/* ===================== LIGHT NAV OVERRIDES ===================== */
+body:has(.ca-page) .site-nav {
+  background: rgba(248, 248, 248, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+body:has(.ca-page) .site-nav.scrolled {
+  background: rgba(248, 248, 248, 0.95);
+  box-shadow: 0 1px 0 rgba(0,0,0,0.06);
+}
+
+body:has(.ca-page) .logo-name {
+  color: var(--teal);
+}
+
+body:has(.ca-page) .nav-links a {
+  color: #4a4a4a;
+}
+
+body:has(.ca-page) .nav-links a:hover {
+  color: var(--teal);
+}
+
+body:has(.ca-page) .hamburger span {
+  background: var(--teal);
+}
+
+body:has(.ca-page) .mobile-drawer {
+  background: rgba(248, 248, 248, 0.95);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+}
+
+body:has(.ca-page) .mobile-drawer a {
+  color: #4a4a4a;
+  border-bottom-color: rgba(0,0,0,0.06);
+}
+
+body:has(.ca-page) .mobile-drawer a:hover {
+  color: var(--teal);
+}
+
+/* ===================== RESPONSIVE ===================== */
+@media (max-width: 768px) {
+  .ca-hero {
+    padding: 140px 24px 64px;
+  }
+
+  .ca-section {
+    padding: 64px 24px;
+  }
+
+  .ca-credentials {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+
+  .ca-product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ca-pricing-grid {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+
+  .ca-hero-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .ca-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .ca-hero-headline {
+    font-size: 28px;
+  }
+
+  .ca-heading {
+    font-size: 24px;
+  }
+}

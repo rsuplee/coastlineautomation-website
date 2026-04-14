@@ -1,65 +1,167 @@
 export default function HomePage() {
   return (
-    <>
-      {/* ==================== 1. HERO ==================== */}
-      <section className="hero">
-        <div className="hero-bg"></div>
-        <div className="hero-overlay-left"></div>
-        <div className="hero-overlay-bottom"></div>
-        <div className="hero-grain"></div>
-
-        <div className="hero-content">
-          <h1 className="hero-headline hero-fade">
-            AI-powered tools built for your trade business
-          </h1>
-          <p className="hero-tagline hero-fade">
-            We build bespoke AI solutions that catch the revenue falling through the cracks — missed calls, lost reviews, forgotten follow-ups.
-          </p>
-          <div className="hero-actions hero-fade">
-            <a href="mailto:hello@coastlineautomation.co.uk" className="btn-primary">Get in touch</a>
-          </div>
-        </div>
-      </section>
-
-      {/* ==================== 2. WHAT WE BUILD ==================== */}
-      <section className="section section-dark" id="how-it-works">
+    <div className="ca-page">
+      {/* ==================== HERO ==================== */}
+      <section className="ca-hero">
         <div className="max-w-site">
-          <p className="section-label reveal">What We Build</p>
-          <h2 className="section-heading reveal">AI tools that catch what you&apos;re missing.</h2>
+          <h1 className="ca-hero-headline">Building AI tools that work for real businesses</h1>
+          <p className="ca-hero-sub">
+            Coastline Automation builds practical AI products for UK trade businesses — and offers bespoke AI consulting for companies that need something custom.
+          </p>
+          <div className="ca-hero-actions">
+            <a href="https://tradecatch.ai" className="ca-btn ca-btn-primary" target="_blank" rel="noopener noreferrer">Explore TradeCatch</a>
+            <a href="#contact" className="ca-btn ca-btn-outline">Talk to us</a>
+          </div>
+        </div>
+      </section>
 
-          <div className="steps-grid stagger-group">
-            <div className="step-card stagger-item">
-              <div className="step-icon">
-                <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      {/* ==================== ABOUT / FOUNDER ==================== */}
+      <section className="ca-section" id="about">
+        <div className="max-w-site">
+          <p className="ca-label">The Founder</p>
+          <h2 className="ca-heading">Built by someone who&apos;s shipped products at scale</h2>
+          <div className="ca-founder-content">
+            <div className="ca-founder-bio">
+              <p>
+                Rich Suplee launched Alexa at Amazon UK and led senior product at Xero — two companies that transformed how millions of people use technology every day. He moved to the South Coast of England and founded Coastline Automation to build AI tools that solve real problems for real businesses.
+              </p>
+              <p>
+                Every product is built in-house using AI-assisted development. No agency, no outsourced dev team. Rich understands every piece of the system because he built every piece of the system.
+              </p>
+            </div>
+            <div className="ca-credentials">
+              <div className="ca-credential-card">
+                <span className="ca-credential-company">Amazon</span>
+                <span className="ca-credential-role">Launched Alexa UK</span>
               </div>
-              <h3 className="step-title">RingCatch</h3>
-              <p className="step-desc">AI phone receptionist that answers missed calls, captures lead details, and texts them to you.</p>
-              <a href="https://ringcatch.ai" className="agent-link" target="_blank" rel="noopener noreferrer">Learn more &rarr;</a>
+              <div className="ca-credential-card">
+                <span className="ca-credential-company">Xero</span>
+                <span className="ca-credential-role">Senior Product</span>
+              </div>
+              <div className="ca-credential-card">
+                <span className="ca-credential-company">Coastline Automation</span>
+                <span className="ca-credential-role">Founder</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ==================== PRODUCTS ==================== */}
+      <section className="ca-section ca-section-alt" id="products">
+        <div className="max-w-site">
+          <p className="ca-label">Products</p>
+          <h2 className="ca-heading">The TradeCatch platform</h2>
+          <p className="ca-intro">
+            TradeCatch is a family of AI-powered tools — each one built to catch the revenue that falls through the cracks for trade businesses. They work brilliantly on their own. Together, they form a system that handles the admin while you stay on the tools.
+          </p>
+
+          <div className="ca-product-grid">
+            <div className="ca-product-card">
+              <div className="ca-product-header">
+                <h3 className="ca-product-name">RingCatch</h3>
+                <span className="ca-badge ca-badge-live">Live</span>
+              </div>
+              <p className="ca-product-desc">AI phone receptionist. Answers missed calls 24/7, captures lead details, texts you a summary in seconds.</p>
+              <a href="https://ringcatch.ai" className="ca-product-link" target="_blank" rel="noopener noreferrer">Try RingCatch &rarr;</a>
             </div>
 
-            <div className="step-card stagger-item">
-              <div className="step-icon">
-                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <div className="ca-product-card">
+              <div className="ca-product-header">
+                <h3 className="ca-product-name">ReviewCatch</h3>
+                <span className="ca-badge ca-badge-live">Live</span>
               </div>
-              <h3 className="step-title">ReviewCatch</h3>
-              <p className="step-desc">AI-powered Google review collection. Send review requests, draft responses, grow your reputation.</p>
-              <a href="https://reviewcatch.ai" className="agent-link" target="_blank" rel="noopener noreferrer">Learn more &rarr;</a>
+              <p className="ca-product-desc">AI-powered Google review collection. Send review requests by SMS, get AI-drafted responses, grow your reputation on autopilot.</p>
+              <a href="https://reviewcatch.ai" className="ca-product-link" target="_blank" rel="noopener noreferrer">Try ReviewCatch &rarr;</a>
             </div>
 
-            <div className="step-card stagger-item">
-              <div className="step-icon">
-                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <div className="ca-product-card">
+              <div className="ca-product-header">
+                <h3 className="ca-product-name">QuoteCatch</h3>
+                <span className="ca-badge ca-badge-soon">Coming Soon</span>
               </div>
-              <h3 className="step-title">Coming Soon</h3>
-              <p className="step-desc">QuoteCatch, BookCatch, ReturnCatch — more tools on the way to help you catch what you&apos;re missing.</p>
+              <p className="ca-product-desc">AI captures job details on the call and sends a quote before the customer rings someone else.</p>
+            </div>
+
+            <div className="ca-product-card">
+              <div className="ca-product-header">
+                <h3 className="ca-product-name">BookCatch</h3>
+                <span className="ca-badge ca-badge-soon">Coming H2 2026</span>
+              </div>
+              <p className="ca-product-desc">AI books jobs into your calendar while you&apos;re on the tools. No double-booking, no back-and-forth.</p>
+            </div>
+
+            <div className="ca-product-card">
+              <div className="ca-product-header">
+                <h3 className="ca-product-name">ReturnCatch</h3>
+                <span className="ca-badge ca-badge-soon">Coming H2 2026</span>
+              </div>
+              <p className="ca-product-desc">Automated follow-up that turns one-off jobs into repeat customers.</p>
             </div>
           </div>
 
-          <p className="section-sub reveal" style={{ marginTop: '3rem', maxWidth: '720px', marginLeft: 'auto', marginRight: 'auto', textAlign: 'center' }}>
-            Coastline Automation is the company behind the TradeCatch family of products. We also offer bespoke AI voice agent builds for businesses that need something custom.
-          </p>
+          <div className="ca-products-footer">
+            <p>All TradeCatch products are available at <a href="https://tradecatch.ai" target="_blank" rel="noopener noreferrer">tradecatch.ai</a></p>
+            <a href="https://tradecatch.ai" className="ca-btn ca-btn-primary" target="_blank" rel="noopener noreferrer">Visit TradeCatch &rarr;</a>
+          </div>
         </div>
       </section>
-    </>
+
+      {/* ==================== CONSULTING ==================== */}
+      <section className="ca-section" id="consulting">
+        <div className="max-w-site">
+          <p className="ca-label">Bespoke Consulting</p>
+          <h2 className="ca-heading">Need something custom? We build that too.</h2>
+          <div className="ca-consulting-text">
+            <p>
+              Not every business fits a self-serve template. Coastline Automation offers bespoke AI voice agent builds — fully managed, custom-trained for your business, your services, your patch, and your terminology.
+            </p>
+            <p>
+              We handle everything: discovery, agent configuration, workflow setup, testing, and go-live. You get a working AI system without touching a line of code or learning a new tool.
+            </p>
+          </div>
+
+          <div className="ca-pricing-grid">
+            <div className="ca-pricing-card">
+              <h3 className="ca-pricing-tier">Core</h3>
+              <div className="ca-pricing-price">&pound;149<span>/month</span></div>
+              <p className="ca-pricing-desc">Bespoke AI agent built around your business. 24/7 answering, SMS + email lead delivery, missed call callback, monthly performance summary, script updates.</p>
+            </div>
+            <div className="ca-pricing-card ca-pricing-card-featured">
+              <h3 className="ca-pricing-tier">Pro</h3>
+              <div className="ca-pricing-price">&pound;249<span>/month</span></div>
+              <p className="ca-pricing-desc">Everything in Core plus proactive monthly optimisation, workflow integration, WhatsApp delivery, website chat agent, priority setup, quarterly business review.</p>
+            </div>
+          </div>
+
+          <p className="ca-pricing-note">&pound;499 customisation fee — currently waived for all new customers.</p>
+          <div className="ca-pricing-cta">
+            <a href="mailto:hello@coastlineautomation.co.uk" className="ca-btn ca-btn-primary">Book a free consultation</a>
+          </div>
+        </div>
+      </section>
+
+      {/* ==================== CONTACT ==================== */}
+      <section className="ca-section ca-section-alt" id="contact">
+        <div className="max-w-site">
+          <p className="ca-label">Contact</p>
+          <h2 className="ca-heading">Let&apos;s talk</h2>
+          <div className="ca-contact-content">
+            <div className="ca-contact-info">
+              <div className="ca-contact-item">
+                <span className="ca-contact-label">Email</span>
+                <a href="mailto:hello@coastlineautomation.co.uk">hello@coastlineautomation.co.uk</a>
+              </div>
+              <div className="ca-contact-item">
+                <span className="ca-contact-label">Products</span>
+                <a href="https://tradecatch.ai" target="_blank" rel="noopener noreferrer">tradecatch.ai</a>
+              </div>
+            </div>
+            <p className="ca-contact-text">Book a free 20-minute call to discuss your needs. No pressure, no hard sell.</p>
+            <a href="mailto:hello@coastlineautomation.co.uk" className="ca-btn ca-btn-primary">Get in touch</a>
+          </div>
+        </div>
+      </section>
+    </div>
   )
 }
