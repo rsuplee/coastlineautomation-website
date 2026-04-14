@@ -2,8 +2,8 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Cookie Policy — RingCatch',
-  description: 'How ringcatch.ai uses cookies and similar technologies.',
+  title: 'Cookie Policy — Coastline Automation',
+  description: 'How coastlineautomation.co.uk uses cookies and similar technologies.',
 }
 
 export default function CookiesPage() {

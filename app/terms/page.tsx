@@ -2,8 +2,8 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Website Terms of Use — RingCatch',
-  description: 'Terms governing your use of the ringcatch.ai website operated by Coastline Automation Ltd.',
+  title: 'Website Terms of Use — Coastline Automation',
+  description: 'Terms governing your use of the coastlineautomation.co.uk website operated by Coastline Automation Ltd.',
 }
 
 export default function TermsPage() {

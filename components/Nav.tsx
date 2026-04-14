@@ -2,7 +2,6 @@
 
 import Link from 'next/link'
 import { useEffect } from 'react'
-import { openCalendly } from '@/lib/calendly'
 
 export default function Nav() {
   useEffect(() => {
@@ -59,21 +58,14 @@ export default function Nav() {
     <>
       <nav className="site-nav">
         <Link href="/" className="logo">
-          <img src="/images/logo.svg" alt="RingCatch" className="logo-icon" />
           <div className="logo-text">
-            <span className="logo-name">RingCatch</span>
-            <span className="logo-sub">by Coastline Automation</span>
+            <span className="logo-name">Coastline Automation</span>
           </div>
         </Link>
         <ul className="nav-links">
           <li><Link href="/#how-it-works">How It Works</Link></li>
-          <li><Link href="/#agents">Our Agents</Link></li>
           <li><Link href="/about">About</Link></li>
-          <li><Link href="/pricing">Pricing</Link></li>
-          <li><Link href="/#faq">FAQ</Link></li>
-          <li><a href="#" className="nav-cta" onClick={openCalendly}>Schedule a Call</a></li>
-          <li><a href="https://app.ringcatch.ai/auth/sign-in" className="nav-login">Log In</a></li>
-          <li><a href="https://app.ringcatch.ai/auth/sign-up" className="nav-get-started">Get Started</a></li>
+          <li><a href="mailto:hello@coastlineautomation.co.uk">Contact</a></li>
         </ul>
         <button className="hamburger" id="hamburger" aria-label="Menu">
           <span></span>
@@ -85,13 +77,8 @@ export default function Nav() {
       <div className="drawer-backdrop" id="drawer-backdrop"></div>
       <div className="mobile-drawer" id="mobile-drawer">
         <Link href="/#how-it-works">How It Works</Link>
-        <Link href="/#agents">Our Agents</Link>
         <Link href="/about">About</Link>
-        <Link href="/pricing">Pricing</Link>
-        <Link href="/#faq">FAQ</Link>
-        <a href="#" className="drawer-cta" onClick={openCalendly}>Schedule a Call</a>
-        <a href="https://app.ringcatch.ai/auth/sign-in" className="drawer-login">Log In</a>
-        <a href="https://app.ringcatch.ai/auth/sign-up" className="drawer-get-started">Get Started</a>
+        <a href="mailto:hello@coastlineautomation.co.uk">Contact</a>
       </div>
     </>
   )

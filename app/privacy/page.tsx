@@ -2,8 +2,8 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy — RingCatch',
-  description: 'How Coastline Automation Ltd (trading as RingCatch) collects, uses, and protects personal data.',
+  title: 'Privacy Policy — Coastline Automation',
+  description: 'How Coastline Automation Ltd collects, uses, and protects personal data.',
 }
 
 export default function PrivacyPage() {

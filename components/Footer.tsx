@@ -1,7 +1,6 @@
 'use client'
 
 import Link from 'next/link'
-import { openCalendly } from '@/lib/calendly'
 
 export default function Footer() {
   return (
@@ -9,38 +8,25 @@ export default function Footer() {
       <div className="footer-inner">
         <div className="footer-brand">
           <div className="logo">
-            <img src="/images/logo.svg" alt="RingCatch" className="logo-icon" />
             <div className="logo-text">
-              <span className="logo-name">RingCatch</span>
-              <span className="logo-sub">by Coastline Automation</span>
+              <span className="logo-name">Coastline Automation</span>
             </div>
           </div>
-          <p style={{ marginTop: 16 }}>Managed AI phone receptionists for trade businesses on the South Coast and beyond.</p>
-        </div>
-
-        <div className="footer-col">
-          <h4>Agents</h4>
-          <Link href="/agents/plumber">Plumber</Link>
-          <Link href="/agents/electrician">Electrician</Link>
-          <Link href="/agents/roofer">Roofer</Link>
-          <Link href="/agents/builder">Builder</Link>
+          <p style={{ marginTop: 16 }}>Bespoke AI-powered tools built for UK trade businesses.</p>
         </div>
 
         <div className="footer-col">
           <h4>Company</h4>
           <Link href="/#how-it-works">How It Works</Link>
           <Link href="/about">About</Link>
-          <Link href="/pricing">Pricing</Link>
-          <Link href="/#faq">FAQ</Link>
           <Link href="/privacy">Privacy Policy</Link>
           <Link href="/terms">Terms of Use</Link>
           <Link href="/cookies">Cookie Policy</Link>
         </div>
 
         <div className="footer-col">
-          <h4>Get Started</h4>
-          <a href="#" onClick={openCalendly}>Schedule a Call</a>
-          <a href="mailto:hello@ringcatch.ai">hello@ringcatch.ai</a>
+          <h4>Get in Touch</h4>
+          <a href="mailto:hello@coastlineautomation.co.uk">hello@coastlineautomation.co.uk</a>
         </div>
       </div>
 
@@ -54,8 +40,8 @@ export default function Footer() {
 
       <div className="footer-bottom">
         <span>&copy; 2026 Coastline Automation Ltd. All rights reserved.</span>
-        <span>Registered in England and Wales. Company No: [TO BE ADDED]. Registered Office: [TO BE ADDED].</span>
-        <span>RingCatch is a product of Coastline Automation Ltd. <a href="mailto:hello@ringcatch.ai">hello@ringcatch.ai</a></span>
+        <span>Registered in England and Wales. Company No: 17046438. Registered Office: 11 Ashdown Ave, Saltdean, BN2 8AH.</span>
+        <span>ICO Registration: C1902158. <a href="mailto:hello@coastlineautomation.co.uk">hello@coastlineautomation.co.uk</a></span>
       </div>
     </footer>
   )
