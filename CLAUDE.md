@@ -8,9 +8,8 @@ Company and bespoke services website for Coastline Automation — the premium, s
 **Deploys:** Vercel auto-deploys from `main`. Preview deploys on branches.
 
 ## Tech Stack
-- Static HTML + CSS + vanilla JS (no framework, no build step)
+- Next.js (App Router) + CSS Modules, hosted on Vercel
 - Satoshi font via Fontshare (`https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900`)
-- Hosted on Vercel
 
 ## Current State
 - Originally cloned from ringcatch.ai (28 March 2026)
