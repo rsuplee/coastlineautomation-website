@@ -105,3 +105,41 @@ Coastline Automation is the company behind the TradeCatch product family. This s
 - **ringcatch-website** (ringcatch.ai) — self-serve product site. Shared colour palette but different brand weight.
 - **tradecatch-website** (tradecatch.ai) — platform hub. Product family brand.
 - **ringcatch-app** (app.tradecatch.ai) — SaaS app. Dark theme.
+
+## Gstack Workflow Routing
+
+When a prompt matches a gstack workflow phase, invoke the matching skill below. These are suggestions, not rules — Rich can override any of them inline (e.g. `skip /plan-eng-review`, `don't use /review`, `no /ship`).
+
+Key routing rules:
+
+- Product ideas, "is this worth building", brainstorming → invoke `/office-hours`
+- Strategy, scope, "think bigger", "what should we build" → invoke `/plan-ceo-review`
+- Architecture, "does this design make sense" → invoke `/plan-eng-review`
+- Design system, brand, "how should this look" → invoke `/design-consultation`
+- Design review of a plan → invoke `/plan-design-review`
+- Developer experience of a plan → invoke `/plan-devex-review`
+- "Review everything", full review pipeline → invoke `/autoplan`
+- Bugs, errors, "why is this broken", "wtf", "this doesn't work" → invoke `/investigate`
+- Test the site, find bugs, "does this work" → invoke `/qa` (or `/qa-only` for report only)
+- Code review, check the diff, "look at my changes" → invoke `/review`
+- Visual polish, design audit, "this looks off" → invoke `/design-review`
+- Developer experience audit, try onboarding → invoke `/devex-review`
+- Ship, deploy, release, "send it" → invoke `/ship` (full pipeline: sync main, tests, push, open PR)
+- Just open a PR, quick PR, draft PR, WIP PR → use `git` + `gh pr create` directly, do NOT invoke `/ship`
+- Merge + deploy + verify → invoke `/land-and-deploy`
+- Configure deployment → invoke `/setup-deploy`
+- Post-deploy monitoring → invoke `/canary`
+- Update docs after shipping → invoke `/document-release`
+
+### Overrides
+
+Override any gstack skill invocation inline:
+- `skip /plan-eng-review` — skip this specific skill for this turn
+- `don't use /review` — same effect, different phrasing
+- `no /ship` — third canonical form
+
+If a gstack skill seems to conflict with an existing convention or custom skill in this repo, stop and ask rather than silently proceeding.
+
+---
+
+**Note on scope:** This repo's CLAUDE.md does not yet address project-specific skill authority because this repo has no custom project-level skills registered. If that changes (skills added to `.claude/skills/`), update this file with an authority section like ringcatch-app's. Cross-repo audit tracked as Linear COA-386.
