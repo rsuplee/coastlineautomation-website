@@ -185,6 +185,8 @@ export async function POST(request: NextRequest) {
               visitor_name: name,
               visitor_email: email,
               trade,
+              // ringcatch-app's hourly call audit (COA-3068/COA-3071) names what placed each call by it.
+              placed_by: 'website_demo',
             },
             retell_llm_dynamic_variables: {
               visitor_name: name.split(' ')[0],
